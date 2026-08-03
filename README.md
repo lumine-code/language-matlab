@@ -10,6 +10,10 @@ MATLAB language support.
 - **Folding**: folds functions and blocks.
 - **Locals**: resolves parameters and local bindings.
 
+## Installation
+
+To install `language-matlab` search for _language-matlab_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-matlab`.
+
 ## Services
 
 - **hyperlink.injection** (`^1.0.0`): consumed to highlight URLs in these files as clickable links.
