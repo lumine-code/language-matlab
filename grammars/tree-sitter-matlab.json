@@ -1,7 +1,7 @@
 {
   "name": "MATLAB",
   "scopeName": "source.matlab",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-matlab",
   "injectionRegex": "^(matlab)$",
   "contentRegex": "^\\s*(function\\s|classdef\\s)|^%%",
