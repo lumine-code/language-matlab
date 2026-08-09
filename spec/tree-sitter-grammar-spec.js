@@ -9,7 +9,7 @@ const path = require("path");
 
 describe("MATLAB Tree-sitter grammar", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-matlab");
+    await lumine.packages.activatePackage("language-matlab");
   });
 
   it("tokenizes the fixture", async () => {
