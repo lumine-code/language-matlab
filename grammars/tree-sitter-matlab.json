@@ -11,7 +11,7 @@
   },
   "treeSitter": {
     "parserSource": "github:acristoffers/tree-sitter-matlab#v1.3.0",
-    "wasmBuildTool": "tree-sitter-cli#v0.26.11",
+    "wasmBuildTool": "tree-sitter-cli#v0.26.13",
     "grammar": "tree-sitter-matlab/tree-sitter-matlab.wasm",
     "highlightsQuery": "tree-sitter-matlab/highlights.scm",
     "localsQuery": "tree-sitter-matlab/locals.scm",
