@@ -10,8 +10,8 @@
     "start": "% "
   },
   "treeSitter": {
-    "parserSource": "github:acristoffers/tree-sitter-matlab#v1.3.0",
-    "wasmBuildTool": "tree-sitter-cli#v0.26.13",
+    "parserSource": "github:acristoffers/tree-sitter-matlab#v1.3.1",
+    "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "matlab.wasm",
     "highlightsQuery": "matlab-highlights.scm",
     "localsQuery": "matlab-locals.scm",
