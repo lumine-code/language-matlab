@@ -93,7 +93,8 @@
 
 ; Parameters
 
-(function_arguments (identifier) @variable.parameter.matlab)
+((identifier) @variable.parameter.matlab
+  (#is? test.childOfType function_arguments))
 
 ; Punctuation
 
