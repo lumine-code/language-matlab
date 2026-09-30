@@ -38,18 +38,19 @@ describe("MATLAB Tree-sitter grammar", () => {
     editor.setText(lines.join("\r\n"));
     const languageMode = editor.getBuffer().languageMode;
     await languageMode.ready;
-    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
+    const root = editor.getSyntaxNodeAtBufferPosition([0, 0], (node) => !node.parent);
+    expect(root.hasError).toBe(false);
     expect(editor.scopeDescriptorForBufferPosition([1, 2]).getScopesArray()).toContain(
       "variable.parameter.matlab",
     );
 
     const startRow = 2998;
     const endRow = startRow + 6;
-    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
+    const highlights = await editor.getGrammar().getQuery("highlightsQuery");
+    const captures = highlights.captures(root, {
       startPosition: new Point(startRow, 0),
       endPosition: new Point(endRow, 0),
     });
-    const captures = groups.find(({ grammar }) => grammar === editor.getGrammar()).captures;
     expect(captures.length).toBeLessThanOrEqual(48);
     expect(
       captures
