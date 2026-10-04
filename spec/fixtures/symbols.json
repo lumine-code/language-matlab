@@ -1,0 +1,29 @@
+{
+  "source.matlab": {
+    "text": "classdef Widget\n  properties\n    count = 1\n  end\n  methods\n    function result = greet(obj, value)\n      result = value;\n    end\n    function result = get.count(obj)\n      result = obj.count;\n    end\n  end\nend\nfunction value = scale(input)\n  value = input * 2;\nend\n% function Phantom() end\n",
+    "symbols": [
+      {
+        "name": "Widget",
+        "tag": "class"
+      },
+      {
+        "name": "count",
+        "tag": "property"
+      },
+      {
+        "name": "greet",
+        "tag": "function"
+      },
+      {
+        "name": "scale",
+        "tag": "function"
+      },
+      {
+        "name": "get.count",
+        "tag": "function",
+        "captureText": "count"
+      }
+    ],
+    "absent": ["Phantom"]
+  }
+}

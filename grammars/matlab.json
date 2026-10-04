@@ -13,6 +13,7 @@
     "parserSource": "github:lumine-code/tree-sitter-matlab#0e59d54ae1236f7dcf61213e0e04b65dc6e7df35",
     "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "matlab.wasm",
+    "tagsQuery": "matlab-tags.scm",
     "highlightsQuery": "matlab-highlights.scm",
     "localsQuery": "matlab-locals.scm",
     "foldsQuery": "matlab-folds.scm",

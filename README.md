@@ -5,6 +5,7 @@ MATLAB language support.
 ## Features
 
 - **Grammars**: provides Tree-sitter grammars, built from [tree-sitter-matlab](https://github.com/acristoffers/tree-sitter-matlab).
+- **Symbols**: classes, functions, property accessors, properties, events and enum entries.
 - **Syntax highlighting**: functions, classdefs, matrices and cell arrays, with `%%` sections recognised.
 - **Brackets**: matrix `[ ]` and cell `{ }` are scoped apart, since they build different things.
 - **Folding**: folds functions and blocks.
