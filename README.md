@@ -11,6 +11,8 @@ MATLAB language support.
 - **Folding**: folds functions and blocks.
 - **Locals**: resolves parameters and local bindings.
 
+The parser is built from upstream without local patches. Upstream limitations apply when parsing unusually long identifiers.
+
 ## Installation
 
 To install `language-matlab` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-matlab`.

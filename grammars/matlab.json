@@ -10,7 +10,7 @@
     "start": "% "
   },
   "treeSitter": {
-    "parserSource": "github:lumine-code/tree-sitter-matlab#0e59d54ae1236f7dcf61213e0e04b65dc6e7df35",
+    "parserSource": "github:acristoffers/tree-sitter-matlab#f03d0347acd8bb05d4edd8c845ac1718729e1fad",
     "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "matlab.wasm",
     "tagsQuery": "matlab-tags.scm",
