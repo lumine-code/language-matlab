@@ -67,9 +67,6 @@
 
 (enum . (identifier) @support.type.matlab)
 
-((identifier) @support.type.matlab
-  )
-
 ; Functions
 
 (function_definition
