@@ -13,6 +13,8 @@ MATLAB language support.
 
 The parser is built from upstream without local patches. Upstream limitations apply when parsing unusually long identifiers.
 
+![MATLAB syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-matlab` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-matlab`.

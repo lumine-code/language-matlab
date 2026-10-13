@@ -1,0 +1,16 @@
+{
+  "title": "language-matlab",
+  "description": "MATLAB syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "f374f20368077aed3e644e63040c98b9d8adc7a2",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "MATLAB syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 360
+    }
+  ]
+}
