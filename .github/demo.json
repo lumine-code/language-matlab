@@ -1,16 +1,61 @@
 {
   "title": "language-matlab",
-  "description": "MATLAB syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "f374f20368077aed3e644e63040c98b9d8adc7a2",
+  "description": "MATLAB syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "d0a96e9cf92fea550e42cfb8cf02069a53545a0c",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "30e654cb6fc2a9663751957277a0078b52aceb26aaa6579fa7bd83192f2d013e",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 360 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "c4d7a05fe6960ae6fb041981d6cf13e9c0286b17",
+      "dirty": true,
+      "workingTreeHash": "c8c1ecbfffafd0d4ca1f3ef718222e809b0d3f3aabe3d890d222f58976eb8817"
+    },
+    "package": {
+      "revision": "d0a96e9cf92fea550e42cfb8cf02069a53545a0c",
+      "dirty": true,
+      "workingTreeHash": "a4bf418e0aea47f9d1190bd03848c4e1f99947e76155430fb978bd8476ce5b25"
+    },
+    "language-matlab": {
+      "revision": "d0a96e9cf92fea550e42cfb8cf02069a53545a0c",
+      "dirty": true,
+      "workingTreeHash": "a4bf418e0aea47f9d1190bd03848c4e1f99947e76155430fb978bd8476ce5b25"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "50ec2f83a6347dd8113870992ec4eb2be4014f3d9e12213c2f51b543f1eca793"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "example.m",
+      "sha256": "5ba1699d660ca4e355221b6f1ac75fbc74d928da84fde2e1c6195a0b18836f37"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "MATLAB syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 360
+      "height": 360,
+      "sha256": "b09d19ab3d132e282b868a0717367088ef08f8ab49fd5ce169bf155f7c04938f"
     }
   ]
 }
