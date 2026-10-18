@@ -46,7 +46,7 @@ describe("MATLAB local queries", () => {
     const source = lines.join("\n");
     const query = await grammar.getQuery("localsQuery");
     const parser = grammar.createParser(await grammar.getLanguage());
-    const tree = parser.parse(source);
+    const tree = await parser.parse(source);
     try {
       expect(tree.rootNode.hasError).toBe(false);
       const local = query.captures(tree.rootNode, {
@@ -63,8 +63,7 @@ describe("MATLAB local queries", () => {
       expect(local.length).toBeLessThanOrEqual(16);
       expect(query.didExceedMatchLimit()).toBe(false);
     } finally {
-      tree.delete();
-      parser.delete();
+      parser.close();
     }
     const result = await captures(source);
     const parameters = result.filter(({ name }) => name === "definition.parameter");
