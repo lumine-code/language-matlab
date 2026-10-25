@@ -155,7 +155,11 @@
 
 ; Comments
 
-[ (comment) (line_continuation) ] @comment.line.matlab @_IGNORE_.spell
+((comment) @comment.line.matlab @_IGNORE_.spell
+  (#not-match? @comment.line.matlab "(^|\\n)[ \\t]*%\\{[ \\t]*[\\r\\n]"))
+((comment) @comment.block.matlab @_IGNORE_.spell
+  (#match? @comment.block.matlab "(^|\\n)[ \\t]*%\\{[ \\t]*[\\r\\n]"))
+(line_continuation) @comment.line.matlab @_IGNORE_.spell
 
 ; Errors
 
