@@ -17,6 +17,7 @@
     "highlightsQuery": "matlab-highlights.scm",
     "localsQuery": "matlab-locals.scm",
     "foldsQuery": "matlab-folds.scm",
-    "injectionsQuery": "matlab-injections.scm"
+    "injectionsQuery": "matlab-injections.scm",
+    "indentsQuery": "matlab-indents.scm"
   }
 }
