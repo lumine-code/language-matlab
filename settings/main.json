@@ -1,7 +1,8 @@
 {
   ".source.matlab": {
     "bracket-matcher": {
-      "autocompleteCharacters": ["()", "[]", "{}", "\"\"", "''"]
+      "autocompleteCharacters": ["()", "[]", "{}", "\"\"", "''"],
+      "autocompleteDisabledCharacters": ["'"]
     },
     "editor": {
       "commentStart": "% "
