@@ -1,3 +1,8 @@
+; Only an unexpected quote is literal recovery; parsed transpose stays code.
+((ERROR) @match.next
+  (#eq? @match.next "'")
+  (#set! indent.match startPosition))
+
 ; Reindent changes code structure, never the contents of multiline literals
 ; or the alignment a user chose inside a block comment.
 ([(string) (comment)] @preserve
