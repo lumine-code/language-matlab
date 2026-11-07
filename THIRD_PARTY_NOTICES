@@ -1,6 +1,7 @@
 ----- BEGIN THIRD-PARTY LICENSE: parser:acristoffers_tree-sitter-matlab -----
 Source: https://github.com/acristoffers/tree-sitter-matlab
-Revision: f03d0347acd8bb05d4edd8c845ac1718729e1fad
+Commit: ff2f83da49bb06128c4cfd055e7c95c05c77cded
+Ref: ff2f83da49bb06128c4cfd055e7c95c05c77cded
 
 Original file: LICENSE
 
