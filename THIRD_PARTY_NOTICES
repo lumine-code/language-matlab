@@ -3,6 +3,9 @@ Source: https://github.com/acristoffers/tree-sitter-matlab
 Commit: ff2f83da49bb06128c4cfd055e7c95c05c77cded
 Ref: ff2f83da49bb06128c4cfd055e7c95c05c77cded
 
+Parser source: github:acristoffers/tree-sitter-matlab#ff2f83da49bb06128c4cfd055e7c95c05c77cded
+Resolved commit: ff2f83da49bb06128c4cfd055e7c95c05c77cded
+
 Original file: LICENSE
 
 Copyright (c) 2023 Álan Crístoffer
