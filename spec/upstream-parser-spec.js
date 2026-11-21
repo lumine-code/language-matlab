@@ -24,6 +24,15 @@ describe("MATLAB upstream parser regressions", () => {
     );
   });
 
+  it("recognizes dotted commands and ranges with more than two colons", async () => {
+    const command = await parse("tools.refresh all\n");
+    expect(command.descendantsOfType("command")[0].text).toBe("tools.refresh all");
+
+    const assignment = await parse("values = 1:2:3:4;\n");
+    const [range] = assignment.descendantsOfType("range");
+    expect(range.namedChildren.map((node) => node.text)).toEqual(["1", "2", "3", "4"]);
+  });
+
   it("accepts empty property validators and enumeration constructor arguments", async () => {
     const properties = await parse("classdef A\n properties\n value double {} = 1\n end\nend\n");
     const validators = properties.descendantsOfType("validation_functions");
